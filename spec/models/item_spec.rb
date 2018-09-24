@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Item, type: :model do
-  let (:user) { User.create!(name: "Sven", email: "svenlarson1098@gmail.com", password: "password") }
+  let (:user) { User.create!(username: "Sven", email: "svenlarson1098@gmail.com", password: "password") }
   let (:list) { List.create!(name: "New List", user: user) }
   let (:item) { Item.create!(name: "New Item", list: list) }
 
