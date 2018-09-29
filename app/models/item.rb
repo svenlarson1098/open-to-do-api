@@ -3,4 +3,5 @@ class Item < ApplicationRecord
   delegate :user, to: :list
 
   validates :name, presence: true, allow_blank: false
+  
 end
